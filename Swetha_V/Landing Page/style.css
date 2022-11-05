@@ -1,0 +1,46 @@
+ul,form{
+    margin-left: 300px;
+}
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: #4093f1;
+    border:none;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+body{
+    background-color: #EAE7DC;
+}
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+}
+#Banner{
+    background-color: black;
+   
+    height: 500px;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+    
+}
+#Services{
+    background-color:red;
+    height: 150px;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+}
+.card{
+    vertical-align: bottom;
+}
+
+
