@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gauge</title>
+        <link  rel="stylesheet" href="{{ url_for('static', filename='gauge.css') }}">
+    </head>
+    <body>
+        <div class="gauge">
+            <div class="gauge__body">
+              <div class="gauge__fill"></div>
+              <div class="gauge__cover"></div>
+            </div>
+        </div>
+        {% block content %}
+        <script>
+            const gaugeElement = document.querySelector(".gauge");
+
+            function setGaugeValue(gauge, value) {
+                if (value < 0 || value > 1) {
+                    return;
+                }
+
+                gauge.querySelector(".gauge__fill").style.transform = `rotate(${value / 2}turn)`;
+                gauge.querySelector(".gauge__cover").textContent = `${Math.round(value * 100)}%`;
+            }
+            //const val={{ receive|tojson }}
+            setGaugeValue(gaugeElement, {{ receive|tojson }});
+        </script>
+        {% endblock %}
+    </body>
+</html>
