@@ -1,0 +1,16 @@
+table{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+table,tr,th,td{
+    padding:10px;
+    border: 2px solid grey;
+}
+@media (min-width:1000px){
+    table,tr,th,td{
+        padding:40px;
+        border: 2px solid grey;
+    }
+    
+}
