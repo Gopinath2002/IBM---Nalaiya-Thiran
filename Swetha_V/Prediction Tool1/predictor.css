@@ -1,0 +1,114 @@
+.container-fluid{
+    background-color: darkorchid;
+    height:850px;
+}
+#Banner{
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+    opacity:3px;
+}
+.call_to_action{
+    border: none;
+    padding:10px;
+    width: 200px;
+    border-radius:10px;
+}
+fieldset>h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    
+}
+input[type="text"],input[type="email"],input[type="number"]{
+    border: none;
+    border-bottom:4px solid lavender;
+    border-left: 5px solid rgb(182, 143, 179);
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    border-radius:8px;
+    box-shadow: 10px 1 lavenderblush;
+}
+label{
+    color: black;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    font-size:16px;}
+select{
+    border: none;
+    border-bottom:4px solid lavender;
+    border-left: 5px solid rgb(182, 143, 179);
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    border-radius:8px;
+    box-shadow: 10px 1 lavenderblush;
+}
+input[type='radio']{
+ display: block;
+ margin-left:20px;
+}
+.circular-progress{
+    display: flex;
+    width: 420px;
+    padding: 50px 0;
+    border-radius: 8px;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px ;
+}
+.circle{
+    position: relative;
+    height: 250px;
+    width:250px;
+    border-radius: 50%;
+    background: conic-gradient(blueviolet 35deg ,#ededed 0deg) ;
+    display: flex;
+    align-items: center;
+}
+.circle::before{
+    content:"";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    background-color:#fff;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.progress-value{
+    position: relative;
+    margin-left: 100px;
+    font-size: 50px;
+    font-weight:600;
+    color: black;
+}
+
+@media (min-width : 1000px) {
+   .circular-progress{
+    margin-top: 300px;
+    margin-left: 50px ;
+   }
+}
+
+
+body{
+    background-color: lavender;
+}
+
+button{
+    width: 30%;
+    padding: 10px;
+    border: none;
+    margin: 10px 0;
+    min-height: 25px;
+    border-radius: 10px;
+    background-color:rgb(168, 168, 231);
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+}

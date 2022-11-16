@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predictor</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="WhatsApp Image 2022-11-16 at 7.07.18 PM.jpeg"
+    />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="predictor.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+  </head>
+  <body>
+    <div class="p-4">
+      <div class="row mb-3">
+        <div class="col-lg-4">
+          <div class="circular-progress">
+            <div class="circle">
+              <span class="progress-value"> 0% </span>
+            </div>
+            <span class="text">Chance?</span>
+          </div>
+        </div>
+        <div class="col-lg-8" style="float: right">
+          <div class="card p-2 ms-2 my-2">
+            <div class="card-body">
+              <form action="#">
+                <fieldset>
+                  <h3>Basic Information</h3>
+                  <label for="Name">
+                    <i class="fi fi-rs-user"></i>
+                    Name:
+                    <input type="text" name="name" id="Name" required />
+                  </label>
+                  <label for="mail">
+                    <i class="fi fi-rs-envelope"></i>
+                    Email:
+                    <input type="email" name="email" id="mail" required />
+                  </label>
+                </fieldset>
+                <hr />
+                <fieldset>
+                  <h3>Preference</h3>
+                  <label for="preclg">
+                    <i class="fi fi-rs-bank"></i>
+                    Preferred College:
+                    <input type="text" name="prclg" id="preclg" required />
+                  </label>
+                  <label for="precour">
+                    <i class="fi fi-rs-edit"></i>
+                    Preferred Course:
+                    <input type="text" name="Precrs" id="precour" required />
+                  </label>
+                </fieldset>
+                <hr />
+                <fieldset>
+                  <h3>Marks</h3>
+                  <label for="board">
+                    <i class="fi fi-rs-school"></i>
+                    12Th Board:
+                    <br />
+                    <input
+                      type="radio"
+                      name="Board"
+                      id="board"
+                      style="display: inline; margin: 0px; min-height: 0px"
+                    />State Board
+                    <input
+                      type="radio"
+                      name="Board"
+                      id="board"
+                      style="display: inline; margin: 0px; min-height: 0px"
+                    />ICSE
+                    <input
+                      type="radio"
+                      name="Board"
+                      id="board"
+                      style="display: inline; margin: 0px; min-height: 0px"
+                    />CBSE
+                  </label>
+                  <label for="cutoff">
+                    <i class="fi fi-rs-assept-document"></i>
+                    CutOff:
+                    <input
+                      type="number"
+                      name="CutOff"
+                      id="cutoff"
+                      max="200"
+                      required
+                    />
+                  </label>
+                  <label for="com">
+                    <i class="fi fi-rr-users-alt"></i>
+                    Community:
+                    <select id="com">
+                      <option value=""></option>
+                    </select>
+                  </label>
+                  <label for="round">
+                    <i class="fi fi-rr-refresh"></i>
+                    Round:
+                    <input
+                      type="number"
+                      name="Round"
+                      id="round"
+                      min="0"
+                      max="4"
+                    />
+                  </label>
+                </fieldset>
+                <button>Predict It!!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
