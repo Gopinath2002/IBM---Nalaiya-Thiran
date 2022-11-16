@@ -34,110 +34,114 @@
             <h1 style="text-align: center">
               University Eligibility Admission Prediction
             </h1>
-            <div class="container"></div>
+            <div class="container col-2"></div>
           </div>
-          <div
-            class="circular-progress container col-lg-4"
-            style="box-sizing: border-box"
-          >
-            <div class="circle">
-              <span class="progress-value"> 0% </span>
-            </div>
-            <span class="text">Chance?</span>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="card" mb-4>
-              <div class="card-body">
-                <form action="#">
-                  <fieldset>
-                    <h1>Basic Information</h1>
-                    <label for="Name">
-                      <i class="fi fi-rs-user"></i>
-                      Name:
-                      <input type="text" name="name" id="Name" />
-                    </label>
-                    <label for="pno">
-                      <i class="fi fi-rr-phone-call"></i>
-                      Phone Number:
-                      <input type="text" name="phoneno" id="pno" />
-                    </label>
-                    <br /><br />
-                    <label for="mail">
-                      <i class="fi fi-rs-envelope"></i>
-                      Email:
-                      <input type="email" name="email" id="mail" />
-                    </label>
-                    <label for="loc">
-                      <i class="fi fi-rs-marker"></i>
-                      Current Location:
-                      <input type="text" name="cloc" id="loc" />
-                    </label>
-                  </fieldset>
-                  <hr />
-                  <fieldset>
-                    <h1>Preference</h1>
-                    <label for="preclg">
-                      <i class="fi fi-rs-bank"></i>
-                      Preferred College:
-                      <input type="text" name="prclg" id="preclg" />
-                    </label>
-                    <label for="precour">
-                      <i class="fi fi-rs-edit"></i>
-                      Preferred Course:
-                      <input type="text" name="Precrs" id="precour" />
-                    </label>
-                  </fieldset>
-                  <hr />
-                  <fieldset>
-                    <h1>Marks</h1>
-                    <label for="board">
-                      <i class="fi fi-rs-school"></i>
-                      12Th Board:
-                      <br />
-                      <input
-                        type="radio"
-                        name="Board"
-                        id="board"
-                        style="display: inline; margin: 0px; min-height: 0px"
-                      />State Board
-                      <input
-                        type="radio"
-                        name="Board"
-                        id="board"
-                        style="display: inline; margin: 0px; min-height: 0px"
-                      />ICSE
-                      <input
-                        type="radio"
-                        name="Board"
-                        id="board"
-                        style="display: inline; margin: 0px; min-height: 0px"
-                      />CBSE
-                    </label>
-                    <br />
-                    <label for="cutoff">
-                      <i class="fi fi-rs-assept-document"></i>
-                      CutOff:
-                      <input
-                        type="number"
-                        name="CutOff"
-                        id="cutoff"
-                        max="200"
-                      />
-                    </label>
-                    <br />
-                    <label for="com">
-                      <i class="fi fi-rr-users-alt"></i>
-                      Community:
-                      <select id="com">
-                        <option value=""></option>
-                      </select>
-                    </label>
-                  </fieldset>
-                </form>
+
+          <div class="container">
+            <div class="row">
+              <div>
+                <div class="card" mb-4>
+                  <div class="card-body">
+                    <form action="#">
+                      <fieldset>
+                        <h1>Basic Information</h1>
+                        <label for="Name">
+                          <i class="fi fi-rs-user"></i>
+                          Name:
+                          <input type="text" name="name" id="Name" />
+                        </label>
+                        <label for="pno">
+                          <i class="fi fi-rr-phone-call"></i>
+                          Phone Number:
+                          <input type="text" name="phoneno" id="pno" />
+                        </label>
+                        <br /><br />
+                        <label for="mail">
+                          <i class="fi fi-rs-envelope"></i>
+                          Email:
+                          <input type="email" name="email" id="mail" />
+                        </label>
+                        <label for="loc">
+                          <i class="fi fi-rs-marker"></i>
+                          Current Location:
+                          <input type="text" name="cloc" id="loc" />
+                        </label>
+                      </fieldset>
+                      <hr />
+                      <fieldset>
+                        <h1>Preference</h1>
+                        <label for="preclg">
+                          <i class="fi fi-rs-bank"></i>
+                          Preferred College:
+                          <input type="text" name="prclg" id="preclg" />
+                        </label>
+                        <label for="precour">
+                          <i class="fi fi-rs-edit"></i>
+                          Preferred Course:
+                          <input type="text" name="Precrs" id="precour" />
+                        </label>
+                      </fieldset>
+                      <hr />
+                      <fieldset>
+                        <h1>Marks</h1>
+                        <label for="board">
+                          <i class="fi fi-rs-school"></i>
+                          12Th Board:
+                          <br />
+                          <input
+                            type="radio"
+                            name="Board"
+                            id="board"
+                            style="
+                              display: inline;
+                              margin: 0px;
+                              min-height: 0px;
+                            "
+                          />State Board
+                          <input
+                            type="radio"
+                            name="Board"
+                            id="board"
+                            style="
+                              display: inline;
+                              margin: 0px;
+                              min-height: 0px;
+                            "
+                          />ICSE
+                          <input
+                            type="radio"
+                            name="Board"
+                            id="board"
+                            style="
+                              display: inline;
+                              margin: 0px;
+                              min-height: 0px;
+                            "
+                          />CBSE
+                        </label>
+                        <br />
+                        <label for="cutoff">
+                          <i class="fi fi-rs-assept-document"></i>
+                          CutOff:
+                          <input
+                            type="number"
+                            name="CutOff"
+                            id="cutoff"
+                            max="200"
+                          />
+                        </label>
+                        <br />
+                        <label for="com">
+                          <i class="fi fi-rr-users-alt"></i>
+                          Community:
+                          <select id="com">
+                            <option value=""></option>
+                          </select>
+                        </label>
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -150,3 +154,8 @@
     <script src="progress.js"></script>
   </body>
 </html>
+
+
+<div class="card mb-4">
+
+</div

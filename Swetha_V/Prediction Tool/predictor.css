@@ -35,11 +35,7 @@ label{
     margin: auto;
     width: 50%;
     padding: 10px;
-    font-size:20px;
-}
-.card{
-        margin-top: 90px;
-}
+    font-size:20px;}
 select{
     border: none;
     border-bottom:4px solid lavender;
@@ -63,7 +59,6 @@ input[type='radio']{
     background-color: #fff;
     flex-direction: column;
     align-items: center;
-   margin-top: 35px;
 }
 .circle{
     position: relative;
@@ -89,4 +84,15 @@ input[type='radio']{
     font-size: 50px;
     font-weight:600;
     color: black;
+}
+
+@media (min-width : 1000px) {
+   .class1{
+    margin-top: 300px;
+    margin-right: 90px ;
+   }
+}
+
+body{
+    background-color: lavender;
 }
