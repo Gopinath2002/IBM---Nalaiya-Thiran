@@ -93,6 +93,10 @@ input[type='radio']{
     margin-top: 300px;
     margin-left: 50px ;
    }
+   .card{
+    margin-top: 300px;
+    margin-left: 50px ;
+   }
 }
 
 
@@ -112,3 +116,41 @@ button{
     font-size: medium;
     cursor: pointer;
 }
+
+@media (min-width : 1000px) {
+    label{
+        color: black;
+        margin: auto;
+        width: 25%;
+        padding: 10px;
+        font-size:16px;
+    }
+    input[type="text"],input[type="email"],input[type="number"]{
+        border: none;
+        border-bottom:4px solid lavender;
+        border-left: 5px solid rgb(182, 143, 179);
+        display:inline;
+        margin: auto;
+        width: 75%;
+        padding: 10px;
+        border-radius:8px;
+        box-shadow: 10px 1 lavenderblush;
+        margin-left: 10px;
+    }
+
+ }
+ input:hover{
+    cursor:pointer;
+ }
+ button:hover{
+    cursor: progress;
+    background-color: rgb(182, 182, 212);
+ }
+ .hide {
+    display: none;
+  }
+  
+  .predict:hover + .hide {
+    display: block;
+    color: violet;
+  }
