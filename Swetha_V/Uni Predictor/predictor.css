@@ -1,0 +1,153 @@
+
+.circular-progress{
+    display: flex;
+    padding: 50px 0;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+.circle{
+    position: relative;
+    height: 250px;
+    width:250px;
+    border-radius: 50%;
+    background: conic-gradient(blueviolet 35deg ,#ededed 0deg) ;
+    display: flex;
+    align-items: center;
+}
+.circle::before{
+    content:"";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    background-color:#fff;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.progress-value{
+    position: relative;
+    margin-left: 100px;
+    font-size: 50px;
+    font-weight:600;
+    color: black;
+}
+
+
+body{
+    background-color: lavender;
+}
+
+
+
+
+ input:hover{
+    cursor:pointer;
+ }
+ button:hover{
+    cursor: progress;
+    background-color: rgb(182, 182, 212);
+ }
+ .hide {
+    display: none;
+  }
+  
+  .predict:hover + .hide {
+    display: block;
+    color: violet;
+  }
+
+.container{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 1000px;
+    max-width: 100%;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 14px 28px rgba(0,0,0,.25),
+                0px 10px 10px;
+  }
+
+body{
+    background-color: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+.form-container{
+    position: absolute;
+    top: 0%;
+    height:100%;
+}
+.prediction{
+    left:0;
+    width: 50%;
+    z-index:1;
+}
+form{
+    background-color: #FFFFFF;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+h1{
+    font-weight: bold;
+    margin: 0;
+}
+
+input[type="text"],input[type="email"],input[type="number"],select,option{
+    border-bottom:4px solid lavender; border-left: 5px solid rgb(182, 143, 179);
+    display: block; margin: auto; width: 100%; border-radius:8px;
+    box-shadow: 10px 1 lavenderblush;border-top:4px solid lavender;
+    border-right:4px solid lavender;
+}
+button{ 
+    width: 30%; padding: 10px; border: none; margin: 10px 0; min-height:
+    25px; border-radius: 10px; background-color:rgb(168, 168, 231); color: white;
+    font-size: 12px; cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+ }
+ .overlay-container{
+  position: absolute;
+    top:0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100;
+ }
+ .overlay{
+    background-color: violet;
+    background: linear-gradient(to right,lavender,rgb(168, 168, 231));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+ }
+ .overlay-panel{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top:0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+ }
+ .overlay-left{
+    right: 0;
+    transform: translateX(0);
+ }
+ 
