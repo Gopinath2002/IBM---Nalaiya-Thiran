@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "TM4LntgIH7QE6T0oUYjTe1vDNwJH0IcB2CQyUV1Ai-gl"
+API_KEY = "insert api key"
 token_response = requests.post('https://iam.cloud.ibm.com/identity/token', data={
                                "apikey": API_KEY, "grant_type": 'urn:ibm:params:oauth:grant-type:apikey'})
 mltoken = token_response.json()["access_token"]
