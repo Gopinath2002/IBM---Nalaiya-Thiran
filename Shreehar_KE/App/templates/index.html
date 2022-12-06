@@ -141,19 +141,27 @@
       <div class="overlay-container">
         <div class="overlay">
           <div class="overlay-panel1 overlay-left">
-            <img
-              src="{{ url_for('static' , filename='/image/Logo_Blue.png')}}"
-              alt="#.."
-              style="width: 200px"
-            />
+            <a href="{{ url_for('landing')}}">
+              <img
+                src="{{ url_for('static' , filename='/image/Logo_Blue.png')}}"
+                alt="#.."
+                style="width: 200px"
+            /></a>
             <br />
           </div>
           <div class="overlay-panel overlay-left">
+            <br />
+            <br />
             <h3>Here's Your Percentage of Chance</h3>
             <br />
             <div class="circular-progress">
               <span class="progress-value"> {{ percent }}</span>
             </div>
+            <br />
+            <div class="overlay-panel1" style="margin-top: 105%"></div>
+
+            <h2 name="PredRank">{{predRank}}</h2>
+            <h2 name="PredRound">{{predRound}}</h2>
           </div>
           <div class="overlay-panel1 overlay-left">
             <a href="{{ url_for('landing')}}">

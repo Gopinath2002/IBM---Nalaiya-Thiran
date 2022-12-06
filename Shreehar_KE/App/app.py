@@ -60,7 +60,7 @@ list_Community = ["OC", "BC", "BCM", "MBC", "DNC", "SC", "SCA", "ST"]
 
 @app.route('/', methods=["GET", "POST"])
 def predict():
-    return render_template("index.html", percent=0, dept=list_Branch_Names, College_name=list_College_Names, College_code=list_College_Codes, dept_code=list_Branch_Codes, com=list_Community)
+    return render_template("index.html", percent=0, dept=list_Branch_Names, College_name=list_College_Names, College_code=list_College_Codes, dept_code=list_Branch_Codes, com=list_Community, predRank="", predRound="")
 
 
 @app.route('/result', methods=["GET", "POST"])
@@ -88,13 +88,18 @@ def result():
     if (input_rank == ''):
         input_rank = predictRank(input_marks)
         input_round = predictRound(input_rank)
+        display_pred_rank = 'Predicted Rank: ' + str(input_rank)
+        display_pred_round = 'Predicted Round: ' + str(input_round)
+
     else:
         input_rank = int(input_rank)
         input_round = int(input_round)
+        display_pred_rank = ''
+        display_pred_round = ''
 
     print('Rank: ', input_rank, '\t', type(input_rank))
     print('Round: ', input_round, '\t', type(input_round))
-    return render_template("index.html", percent=76, dept=list_Branch_Names, College_name=list_College_Names, College_code=list_College_Codes, dept_code=list_Branch_Codes, com=list_Community)
+    return render_template("index.html", percent=76, dept=list_Branch_Names, College_name=list_College_Names, College_code=list_College_Codes, dept_code=list_Branch_Codes, com=list_Community, predRank=display_pred_rank, predRound=display_pred_round)
 
 
 @app.route('/Landing', methods=["GET", "POST"])
